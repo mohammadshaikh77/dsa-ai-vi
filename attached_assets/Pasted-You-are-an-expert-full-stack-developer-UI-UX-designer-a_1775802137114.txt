@@ -1,0 +1,148 @@
+You are an expert full-stack developer, UI/UX designer, and AI engineer.
+
+Build a complete web application called:
+
+"AI-Powered DSA Visualizer"
+
+This should be a working full-stack project using:
+- Frontend: React + Tailwind CSS + Framer Motion
+- Backend: FastAPI (Python)
+- AI: OpenAI API
+- Authentication: Firebase Authentication
+
+CORE FUNCTIONALITY:
+
+The app should:
+
+1. Take any DSA problem as input
+2. Use AI to analyze it and generate:
+   - Pattern detection (e.g., DP, Graph, Sliding Window)
+   - Difficulty level
+   - Brute force approach
+   - Optimal approach
+   - Code in C++ and Java
+   - Step-by-step dry run
+3. Visually animate the algorithm execution step-by-step
+
+BACKEND (FastAPI):
+
+Create an API endpoint:
+
+POST /analyze
+
+Request:
+{
+  "problem": "string"
+}
+
+Response (structured JSON):
+
+{
+  "pattern": "Sliding Window",
+  "difficulty": "Medium",
+  "brute_force": "text explanation",
+  "optimal": "text explanation",
+  "code": {
+    "cpp": "string",
+    "java": "string"
+  },
+  "steps": [
+    {
+      "state": {},
+      "highlight": [],
+      "description": "string"
+    }
+  ]
+}
+
+Use OpenAI API to dynamically generate this response.
+
+FRONTEND (React):
+
+Build the frontend with the following sections:
+
+1. Authentication Section
+   - Implement Firebase Authentication
+   - Google Sign-In button
+   - Show user profile (name and email after login)
+   - Logout functionality
+
+2. Problem Input Section
+   - Textarea for problem input
+   - "Analyze" button
+
+3. Pattern & Explanation Section
+   - Pattern badge
+   - Difficulty badge
+   - Explanation of approaches
+
+4. Code Section
+   - Toggle between C++ / Java
+   - Syntax highlighted code display
+
+5. Visualization Section (MAIN)
+   - Render visualization dynamically based on steps
+   - Highlight active elements
+   - Animate transitions between steps
+
+VISUALIZATION ENGINE:
+
+Create a dynamic visualization system (no hardcoding).
+
+Support:
+- Arrays → boxes
+- Sliding Window → moving window
+- Linked List → nodes with pointers
+- Graph → nodes + edges
+- Recursion → tree
+- Matrix → grid
+
+Each step must include:
+- Current state
+- Highlighted elements
+- Description
+
+ANIMATION:
+
+Use Framer Motion:
+- Active elements → scale + highlight
+- Transitions → smooth movement
+- State updates → animated
+
+CONTROLS:
+
+Provide:
+- Play
+- Pause
+- Next Step
+- Previous Step
+- Speed control slider
+
+USER INPUT:
+
+- Allow custom test case input
+- Re-run visualization dynamically based on input
+
+CODE STRUCTURE:
+
+- Modular React components
+- Reusable visualization components
+- Clean folder structure
+
+UI REQUIREMENT:
+
+The UI should match exactly the design provided in the reference image.
+
+- Replicate layout, spacing, colors, and structure from the image
+- If there are any inconsistencies or design issues in the image, fix and improve them while keeping the same overall look and feel
+
+IMPORTANT:
+
+- Do NOT hardcode problems
+- Use dynamic AI-generated data
+- Ensure smooth user experience
+- Ensure clean and maintainable code
+
+GOAL:
+
+Build a hackathon-ready, visually impressive AI-powered DSA learning tool with authentication support.

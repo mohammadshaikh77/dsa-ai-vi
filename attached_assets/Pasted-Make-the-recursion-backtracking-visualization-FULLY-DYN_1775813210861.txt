@@ -1,0 +1,130 @@
+Make the recursion/backtracking visualization FULLY DYNAMIC so it works for ANY problem.
+
+-----------------------------------
+CORE REQUIREMENT:
+-----------------------------------
+
+Use the provided UI design as a BASE TEMPLATE only.
+
+- Keep layout and styling same
+- DO NOT hardcode values like [1,2,3]
+- Everything must be generated dynamically from input
+
+-----------------------------------
+DYNAMIC INPUT SUPPORT:
+-----------------------------------
+
+Accept input dynamically based on problem:
+
+Examples:
+- Subsets → [1,2,3]
+- Permutations → [1,2,3]
+- Combination Sum → [2,3,6,7]
+- N-Queens → board size n
+
+-----------------------------------
+DYNAMIC RECURSION TREE:
+-----------------------------------
+
+- Generate recursion tree dynamically based on function calls
+- Each node should represent a function call
+
+Example:
+solve(index, temp)
+
+- Show branching based on decisions:
+  - Pick
+  - Not pick
+  - Try next option
+
+-----------------------------------
+SUPPORT MULTIPLE PROBLEMS:
+-----------------------------------
+
+Template should adapt for:
+
+- Subsets
+- Permutations
+- Combination Sum
+- N-Queens
+- Any backtracking problem
+
+-----------------------------------
+DYNAMIC DECISIONS:
+-----------------------------------
+
+Each step should show:
+
+- Current index
+- Current state (temp array / board / string)
+- Decision taken
+
+Examples:
+- "Pick 2"
+- "Skip 2"
+- "Place Queen"
+- "Backtrack"
+
+-----------------------------------
+CALL STACK (DYNAMIC):
+-----------------------------------
+
+- Show actual recursion calls dynamically
+- Highlight current active function
+- Show returning steps
+
+Example:
+solve(2, [1,2])  
+solve(3, [1,2,3]) → returning  
+
+-----------------------------------
+ANIMATION LOGIC:
+-----------------------------------
+
+Animation must reflect real recursion:
+
+- Going deeper → expand tree downward
+- Backtracking → highlight reverse path
+- Decision branches → left/right split
+
+-----------------------------------
+CURRENT STATE PANEL:
+-----------------------------------
+
+Update dynamically:
+
+- index
+- current temp / state
+- decision taken
+
+Example:
+index = 2  
+temp = [1,2]  
+Decision: Pick 3  
+
+-----------------------------------
+VISUALIZATION RULES:
+-----------------------------------
+
+- Tree depth adjusts automatically
+- Node spacing adjusts dynamically
+- Highlight active node clearly
+- Fade inactive branches
+
+-----------------------------------
+IMPORTANT:
+-----------------------------------
+
+- DO NOT reuse static example like [1,2,3]
+- Always generate tree from input
+- Animation must match actual recursion calls
+- Backtracking must be visually shown (reverse movement)
+
+-----------------------------------
+GOAL:
+-----------------------------------
+
+Create a reusable recursion/backtracking visualization system that:
+- Works for ANY recursion problem
+- Dynamically builds tree
+- Shows real call stack and decisions

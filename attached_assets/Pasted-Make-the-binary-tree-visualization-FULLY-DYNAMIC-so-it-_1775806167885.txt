@@ -1,0 +1,108 @@
+Make the binary tree visualization FULLY DYNAMIC so it works for ANY binary tree problem.
+
+-----------------------------------
+CORE REQUIREMENT:
+-----------------------------------
+
+Use the provided UI design as a BASE TEMPLATE only.
+
+- Keep layout and styling same
+- DO NOT hardcode tree values (like 15, 10, 20, etc.)
+- Tree must be generated dynamically from input data
+
+-----------------------------------
+DYNAMIC TREE GENERATION:
+-----------------------------------
+
+- Accept input as array (LeetCode style)
+
+Example:
+[15, 10, 20, 8, 12, 18, 25]
+
+- Convert array → binary tree structure
+- Render nodes dynamically
+- Maintain proper parent-child relationships
+
+-----------------------------------
+SUPPORT MULTIPLE PROBLEMS:
+-----------------------------------
+
+Template should adapt automatically for:
+
+- Binary Search Tree (search, insert)
+- Tree Traversals (inorder, preorder, postorder)
+- Level Order (BFS)
+- Depth/Height calculation
+
+-----------------------------------
+DYNAMIC ANIMATION:
+-----------------------------------
+
+Animation must change based on problem type:
+
+1. SEARCH:
+   - Highlight current node
+   - Compare values
+   - Move left/right
+
+2. TRAVERSAL:
+   - Highlight nodes in traversal order
+   - Show path progression
+
+3. BFS:
+   - Show queue behavior
+   - Level-by-level highlighting
+
+4. INSERT:
+   - Animate node insertion
+   - Show correct position
+
+-----------------------------------
+CURRENT STATE PANEL (DYNAMIC):
+-----------------------------------
+
+Update dynamically:
+- Current node value
+- Condition being checked
+- Action taken (move left/right/visit)
+
+Example:
+"18 > 15 → move right"
+
+-----------------------------------
+ACTION LOG (DYNAMIC):
+-----------------------------------
+
+- Generate steps based on algorithm
+- Do NOT use static text
+
+Example:
+Step 1: Check node 15  
+Step 2: Move right  
+Step 3: Check node 20  
+
+-----------------------------------
+VISUALIZATION LOGIC:
+-----------------------------------
+
+- Tree layout should auto-adjust based on depth
+- Nodes spaced properly
+- Edges dynamically connected
+
+-----------------------------------
+IMPORTANT:
+-----------------------------------
+
+- Use the UI only as design reference
+- DO NOT reuse static numbers or fixed structure
+- Everything must be data-driven
+- Animation must reflect actual algorithm logic
+
+-----------------------------------
+GOAL:
+-----------------------------------
+
+Create a reusable Binary Tree visualization system that:
+- Works for ANY input
+- Works for ANY binary tree problem
+- Uses same UI design but dynamic data and animation

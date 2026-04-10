@@ -1,0 +1,134 @@
+Make the grid visualization FULLY DYNAMIC so it works for ANY 2D matrix or grid-based problem.
+
+-----------------------------------
+CORE REQUIREMENT:
+-----------------------------------
+
+Use the provided UI design as a BASE TEMPLATE only.
+
+- Keep layout and styling same
+- DO NOT hardcode grid values (like 0,1 pattern)
+- Grid must be generated dynamically from input
+
+-----------------------------------
+DYNAMIC GRID GENERATION:
+-----------------------------------
+
+- Accept input as 2D array
+
+Example:
+[
+  [1,1,0,0],
+  [1,0,0,1],
+  [0,0,1,1]
+]
+
+- Render grid dynamically based on rows and columns
+- Each cell should be generated from input data
+
+-----------------------------------
+SUPPORT MULTIPLE PROBLEMS:
+-----------------------------------
+
+Template should adapt for:
+
+- Number of Islands (DFS/BFS)
+- Flood Fill
+- Shortest Path in Grid
+- Matrix Traversal
+- DFS / BFS exploration
+
+-----------------------------------
+DYNAMIC CELL STATES:
+-----------------------------------
+
+Each cell should support dynamic states:
+
+- Default (unvisited)
+- Current (active cell)
+- Visited
+- Path
+- Blocked / Water
+
+Use different colors dynamically (not fixed)
+
+-----------------------------------
+DYNAMIC ANIMATION:
+-----------------------------------
+
+Animation must change based on problem:
+
+1. NUMBER OF ISLANDS:
+   - Explore connected components
+   - Highlight DFS/BFS traversal
+   - Mark visited cells
+
+2. FLOOD FILL:
+   - Spread color step-by-step
+
+3. SHORTEST PATH:
+   - Show path expansion
+   - Highlight final path
+
+4. DFS/BFS:
+   - Show traversal direction
+   - Animate movement between cells
+
+-----------------------------------
+CURRENT STATE PANEL:
+-----------------------------------
+
+Update dynamically:
+
+- Current position (row, col)
+- Action being performed
+- Number of visited cells
+- Direction being explored
+
+Example:
+"Visiting (2,3), marking as visited"
+
+-----------------------------------
+ACTION LOG:
+-----------------------------------
+
+- Generate steps dynamically
+- DO NOT use static text
+
+Example:
+Step 1: Visit (0,0)  
+Step 2: Explore right  
+Step 3: Mark visited  
+
+-----------------------------------
+STEP PREVIEW:
+-----------------------------------
+
+- Show upcoming actions dynamically
+- Based on algorithm logic
+
+-----------------------------------
+VISUALIZATION LOGIC:
+-----------------------------------
+
+- Grid size must adapt to input
+- Spacing should adjust automatically
+- Animations should follow actual algorithm
+
+-----------------------------------
+IMPORTANT:
+-----------------------------------
+
+- Use UI only as design reference
+- DO NOT reuse static grid values
+- Everything must be data-driven
+- Animation must match real algorithm execution
+
+-----------------------------------
+GOAL:
+-----------------------------------
+
+Create a reusable 2D matrix visualization system that:
+- Works for ANY grid problem
+- Adapts based on input
+- Animates real algorithm behavior

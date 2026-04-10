@@ -1,0 +1,84 @@
+Improve the positioning of the animation control buttons (Play, Pause, Next, Previous, Speed).
+
+CURRENT ISSUE:
+- Controls are placed too far down
+- User has to scroll to access them
+- Poor user experience during visualization
+
+GOAL:
+Make controls always visible and easily accessible without scrolling.
+
+-----------------------------------
+REQUIRED FIX:
+-----------------------------------
+
+1. Make the control panel STICKY or FIXED
+
+Option 1 (Preferred):
+- Place controls at the bottom of the visualization section
+- Use sticky positioning
+
+Example:
+position: sticky;
+bottom: 0;
+
+Option 2:
+- Fix controls at bottom of screen
+
+position: fixed;
+bottom: 20px;
+left: center;
+
+-----------------------------------
+UI BEHAVIOR:
+-----------------------------------
+
+- Controls should ALWAYS remain visible while user scrolls
+- Should not overlap important content
+- Should feel like part of the UI (not floating randomly)
+
+-----------------------------------
+STYLING:
+-----------------------------------
+
+- Use glassmorphism style (match existing UI)
+- Add slight blur background
+- Rounded corners
+- Soft shadow
+
+-----------------------------------
+SPACING:
+-----------------------------------
+
+- Add padding so content is not hidden behind controls
+- Maintain proper gap between visualization and controls
+
+-----------------------------------
+RESPONSIVENESS:
+-----------------------------------
+
+- On mobile:
+  - Controls should be compact
+  - Easily clickable (touch-friendly)
+  - No overlap with content
+
+-----------------------------------
+ANIMATION:
+-----------------------------------
+
+- Add smooth fade-in when appearing
+- Subtle hover effects on buttons
+
+-----------------------------------
+IMPORTANT:
+-----------------------------------
+
+- Do NOT change other UI sections
+- Only fix control positioning
+- Keep design consistent
+
+-----------------------------------
+GOAL:
+-----------------------------------
+
+Ensure users can control animation (Play/Pause/Next) without scrolling, making the experience smooth and interactive.
